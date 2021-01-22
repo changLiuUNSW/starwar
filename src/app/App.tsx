@@ -1,9 +1,9 @@
 import Layout from './components/Layout';
-import PeopleContainer from './containers/PeopleContainer';
+import PeopleList from './containers/PeopleList';
 
 const App = () => (
   <Layout>
-    <PeopleContainer />
+    <PeopleList />
   </Layout>
 );
 

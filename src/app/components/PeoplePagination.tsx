@@ -20,12 +20,24 @@ const PeoplePagination = ({ onNext, onPrev, loading }: Props) => (
   <Container>
     <Pagination aria-label="people table pagination">
       <PaginationItem disabled={loading || !onPrev}>
-        <PaginationLink href="#" onClick={onPrev}>
+        <PaginationLink
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            onPrev();
+          }}
+        >
           Previous
         </PaginationLink>
       </PaginationItem>
       <PaginationItem disabled={loading || !onNext}>
-        <PaginationLink href="#" onClick={onNext}>
+        <PaginationLink
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            onNext();
+          }}
+        >
           Next
         </PaginationLink>
       </PaginationItem>

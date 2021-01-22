@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeoplePagination renders correctly 1`] = `
+<div
+  className="sc-bdfBwQ gbvaeM"
+>
+  <nav
+    aria-label="people table pagination"
+    className=""
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="page-item disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Previous
+        </a>
+      </li>
+      <li
+        className="page-item disabled"
+      >
+        <a
+          className="page-link"
+          href="#"
+          onClick={[Function]}
+        >
+          Next
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

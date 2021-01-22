@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+Array [
+  <nav
+    className="navbar navbar-light bg-light"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+    >
+      Star War
+    </a>
+  </nav>,
+  <main
+    className="sc-bdfBwQ ijcHcs container"
+  >
+    test
+  </main>,
+]
+`;

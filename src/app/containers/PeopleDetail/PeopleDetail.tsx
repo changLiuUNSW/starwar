@@ -1,11 +1,8 @@
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Spinner, Alert } from 'reactstrap';
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-import { filmActions } from '../stores/film/actions';
-import { People } from '../models/People';
-import { getFilmError, getFilmFilms, getFilmLoading, RootState } from '../stores';
-import { Film } from '../models/Film';
+import { People } from '../../models/People';
+import { Film } from '../../models/Film';
 
 const List = styled.ul`
   padding-left: 0;
@@ -21,7 +18,7 @@ interface Props {
   loading: boolean;
 }
 
-const PeopleDetailContainer = ({ item, toggle, loading, films, error, load }: Props) => {
+const PeopleDetail = ({ item, toggle, loading, films, error, load }: Props) => {
   useEffect(() => {
     if (item) {
       load(item.films);
@@ -50,7 +47,7 @@ const PeopleDetailContainer = ({ item, toggle, loading, films, error, load }: Pr
         ) : (
           <List>
             {films.map((film) => (
-              <li>{film.title}</li>
+              <li key={film.title}>{film.title}</li>
             ))}
           </List>
         )}
@@ -65,14 +62,4 @@ const PeopleDetailContainer = ({ item, toggle, loading, films, error, load }: Pr
   );
 };
 
-const mapStateToProps = (state: RootState) => {
-  return {
-    films: getFilmFilms(state),
-    loading: getFilmLoading(state),
-    error: getFilmError(state),
-  };
-};
-
-export default connect(mapStateToProps, {
-  load: filmActions.load,
-})(PeopleDetailContainer);
+export default PeopleDetail;

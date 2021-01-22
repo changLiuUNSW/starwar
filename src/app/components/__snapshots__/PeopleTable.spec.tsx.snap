@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeopleTable renders correctly 1`] = `
+<div>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            Height
+          </th>
+          <th>
+            Mass
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="sc-bdfBwQ iVZKII"
+          onClick={[Function]}
+        >
+          <td>
+            Luke Skywalker
+          </td>
+          <td>
+            172
+          </td>
+          <td>
+            77
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

@@ -10,6 +10,7 @@ The Star War Web App based on [Star Wars API](https://swapi.dev/)
 - State management: [React-Redux](https://github.com/reduxjs/react-redux)
 - Redux Middleware: [Redux-Observable](https://redux-observable.js.org/)
 - Http request: [Rxjs/Ajax](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
+- Unit test: [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) + [Rxjs Marble Tests](https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/testing/marble-testing.md)
 
 ## Available Scripts
 

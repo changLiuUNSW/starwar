@@ -10,12 +10,12 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => (
-  <div>
+  <>
     <Navbar color="light" light>
       <NavbarBrand href="/">Star War</NavbarBrand>
     </Navbar>
     <Main tag="main">{children}</Main>
-  </div>
+  </>
 );
 
 export default Layout;

@@ -18,10 +18,6 @@ export interface RootState {
   film: fromFilm.State;
 }
 
-export interface Dependencies {
-  apiService: ApiService;
-}
-
 const rootReducer = combineReducers<RootState>({
   people: fromPeople.reducer,
   film: fromFilm.reducer,
@@ -30,10 +26,8 @@ const rootReducer = combineReducers<RootState>({
 const rootEpic = combineEpics(...peopleEipcs, ...filmEipcs);
 
 function configureStore() {
-  const epicMiddleware = createEpicMiddleware<RootAction, RootAction, RootState, Dependencies>({
-    dependencies: {
-      apiService,
-    },
+  const epicMiddleware = createEpicMiddleware<RootAction, RootAction, RootState, ApiService>({
+    dependencies: apiService,
   });
 
   const store =
