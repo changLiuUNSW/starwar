@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Star War Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Star War Web App based on [Star Wars API](https://swapi.dev/)
+
+## Technology Stack
+
+- Language: [Typescript](https://www.typescriptlang.org/)
+- UI Framework: [Bootstrap 4](https://getbootstrap.com/) + [Reactstrap](https://reactstrap.github.io/)
+- Style: [Styled-component](https://www.styled-components.com/)
+- State management: [React-Redux](https://github.com/reduxjs/react-redux)
+- Redux Middleware: [Redux-Observable](https://redux-observable.js.org/)
+- Http request: [Rxjs/Ajax](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
 
 ## Available Scripts
 
